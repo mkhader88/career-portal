@@ -1,0 +1,58 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api-gateway-ms-deployment
+  labels:
+    app: api-gateway-ms
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: api-gateway-ms
+  template:
+    metadata:
+      labels:
+        app: api-gateway-ms
+    spec:
+      containers:
+        - name: api-gateway-ms
+          image: mkhader88/career-portal-api-gateway-service:1
+          imagePullPolicy: Always
+          ports:
+          - containerPort: 8000
+          env:
+          - name: PORT 
+            value: "8000"
+          - name: JOB_SEARCH_ENDPOINT
+            value: http://http-job-search-ms-service:8000
+          - name: CANDIDATE_SEARCH_ENDPOINT
+            value: http://http-recruiter-search-ms-service:8000
+          - name: JOBS_ENDPOINT
+            value: http://http-jobs-ms-service:8000
+          - name: ACCOUNTS_ENDPOINT
+            value: http://http-account-ms-service:8000
+          - name: CANDIDATE_ENDPOINT
+            value: http://http-candidates-ms-service:8000
+          - name: JOB_SEARCH_API
+            value: "/api/job/search"
+          - name: CANDIDATE_SEARCH_API
+            value: "/api/seeker/search"
+          - name: JOB_API
+            value: "/api/js"
+          - name: ACCOUNT_API
+            value: "/api/auth"               
+          - name: CANDIDATE_API
+            value: "/api/ca"  
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: http-api-gateway-ms-service
+spec:
+  selector:
+    app: api-gateway-ms
+  ports:
+    - protocol: TCP
+      port: 8000
+      targetPort: 8000
+      name: http
