@@ -1,0 +1,4 @@
+helm install cassandra bitnami/cassandra \
+  --set replicaCount=3 \
+  --set auth.enabled=false \
+  --set allowAnonymousLogin=true
