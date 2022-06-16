@@ -4,7 +4,7 @@ var transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
     auth: {
         user: "rajausman.miu@gmail.com",
-        pass: "r@j@usm@n.MIU"
+        pass: "pofvpopubsauvemk"
     }
 });
 const sendMail = function (mailOptions) {
