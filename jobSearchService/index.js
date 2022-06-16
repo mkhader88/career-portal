@@ -4,13 +4,21 @@ const cors = require('cors')
 
 const { Client } = require('@elastic/elasticsearch');
 
-const client = new Client({
+/*const client = new Client({
     node: process.env.ES_ADDRESS,
     auth: {
         username: process.env.ES_USERNAME,
         password: process.env.ES_PASSWORD
     }
-})
+})*/
+
+ const client = new Client({
+     cloud: { id: 'career-portal:dXMtY2VudHJhbDEuZ2NwLmNsb3VkLmVzLmlvOjQ0MyQ2YjYxNmZiNTRlNmU0ZDI0OWU1NDViMzdlMTZiMDQzZCQzYWEzNzNmODRlY2M0ZDU3OWE3YTE5Y2ZiYTRjNzQ1OQ==' },
+     auth: {
+         username: 'elastic',
+         password: 'gnT3Y120zNSWIkxN3JRWRjNS'
+     }
+ })
 const { Kafka } = require("kafkajs");
 const { json } = require("body-parser");
 const jobsRoutes = require("./routes/jobs");

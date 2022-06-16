@@ -3,7 +3,15 @@ const express = require("express");
 const router = express.Router();
 const { Client } = require('@elastic/elasticsearch');
 const { query } = require("express");
-const client = new Client({ node: process.env.ES_ADDRESS })
+//const client = new Client({ node: process.env.ES_ADDRESS })
+
+const client = new Client({
+    cloud: { id: 'career-portal:dXMtY2VudHJhbDEuZ2NwLmNsb3VkLmVzLmlvOjQ0MyQ2YjYxNmZiNTRlNmU0ZDI0OWU1NDViMzdlMTZiMDQzZCQzYWEzNzNmODRlY2M0ZDU3OWE3YTE5Y2ZiYTRjNzQ1OQ==' },
+    auth: {
+        username: 'elastic',
+        password: 'gnT3Y120zNSWIkxN3JRWRjNS'
+    }
+})
 
 
 router.get("/", async(req, res) => {
