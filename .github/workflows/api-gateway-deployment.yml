@@ -3,7 +3,7 @@ name: Api Gateway Service
 on:
   push:
     branches:
-      - 'main'
+      - 'master'
 
 jobs:
   docker:

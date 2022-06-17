@@ -3,7 +3,7 @@ name: Job Service
 on:
   push:
     branches:
-      - 'main'
+      - 'master'
 
 jobs:
   docker:
