@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: candidates-ms
-          image: mkhader88/career-portal-candidates-service:1
+          image: mkhader88/career-portal-candidates-service:latest
           imagePullPolicy: Always
 
           ports:

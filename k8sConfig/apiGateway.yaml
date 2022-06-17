@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: api-gateway-ms
-          image: mkhader88/career-portal-api-gateway-service:1
+          image: mkhader88/career-portal-api-gateway-service:latest
           imagePullPolicy: Always
           ports:
           - containerPort: 8000

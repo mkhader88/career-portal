@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: account-ms
-          image: mkhader88/career-portal-account-service:1
+          image: mkhader88/career-portal-account-service:latest
           imagePullPolicy: Always
           ports:
           - containerPort: 8000

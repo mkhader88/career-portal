@@ -30,4 +30,4 @@ jobs:
         with:
           context: ./emailService/
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/career-portal-email-service:1
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/career-portal-email-service:latest
