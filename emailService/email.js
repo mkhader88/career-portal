@@ -2,9 +2,12 @@ const nodemailer = require('nodemailer');
 var transporter = nodemailer.createTransport({
     service: "gmail",
     host: "smtp.gmail.com",
+    port: 465,
+    secure: true,
+    pool: true,
     auth: {
-        user: "rajausman.miu@gmail.com",
-        pass: "pofvpopubsauvemk"
+        user: "usamakaram1993@gmail.com",
+        pass: "qewiuzfjnvjtybyr"
     }
 });
 const sendMail = function (mailOptions) {
