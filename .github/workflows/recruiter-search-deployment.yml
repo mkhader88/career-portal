@@ -30,4 +30,4 @@ jobs:
         with:
           context: ./recruiterSearchService/
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/js-recruiter-search-service:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/career-portal-recruiter-search-service:2
