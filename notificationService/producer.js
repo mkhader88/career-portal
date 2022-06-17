@@ -19,7 +19,9 @@ const Producer = async(job_seeker) => {
     await producer.send({
         topic: process.env.EMAIL_TOPIC,
         messages: [
-            { value: JSON.stringify({ to: job_seeker.email, subject: "New Vacancy opened for you", text: "Go and login to check out this opportunity" }) },
+            { value: JSON.stringify({ to: job_seeker.email, subject: "New Position Available", text: "Hello Applicant,\n" +
+                        "\n" +
+                        "Good news, there's a new position available which matches your skills. Please login to your account and start applying." }) },
         ],
     });
 }

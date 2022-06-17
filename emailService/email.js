@@ -24,7 +24,7 @@ const sendMail = function (mailOptions) {
 async function mailTo(to, subject, text) {
     const mailOptions = {
         from: {
-            name: 'Appointment System',
+            name: 'Career Portal - New Vacancy Alert',
             address: 'rajausman.miu@gmail.com'
         },
         to: to,
@@ -43,7 +43,7 @@ exports.handler = async (event, context) => {
             console.log(body);
             const mailOptions = {
                 from: {
-                    name: 'Appointment System',
+                    name: 'Career Portal - New Vacancy Alert',
                     address: 'rajausman.miu@gmail.com'
                 },
                 to: body.to,
