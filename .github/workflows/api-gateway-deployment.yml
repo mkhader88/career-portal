@@ -30,4 +30,4 @@ jobs:
         with:
           context: ./apiGateway/
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/career-portal-api-gateway-service:1
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/career-portal-api-gateway-service:latest

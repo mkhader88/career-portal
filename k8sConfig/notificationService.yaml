@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: notification-service-ms
-          image: mkhader88/career-portal-notification-service:1
+          image: mkhader88/career-portal-notification-service:latest
           imagePullPolicy: Always
           ports:
           - containerPort: 8000

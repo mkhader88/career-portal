@@ -30,4 +30,4 @@ jobs:
         with:
           context: ./notificationService/
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/career-portal-notification-service:1
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/career-portal-notification-service:latest

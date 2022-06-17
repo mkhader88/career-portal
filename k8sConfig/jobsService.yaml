@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: jobs-ms
-          image: mkhader88/career-portal-jobs-service:1
+          image: mkhader88/career-portal-jobs-service:latest
           imagePullPolicy: Always
           ports:
           - containerPort: 8000
