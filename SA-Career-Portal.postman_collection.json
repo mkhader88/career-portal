@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "76d8078e-3b23-4c89-8962-c0844ddb4c01",
-		"name": "SA",
+		"_postman_id": "80173c5b-3795-483c-84ec-f96218bf000b",
+		"name": "SA Career Portal",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -246,7 +246,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"title\":\"Java Software Engineer II\",\n    \"location\":\"Austin, TX\",\n    \"jobDescription\": \"operating our autonomous vehicles on public roads to enable Argo to continue its testing, monitoring, and development of its Autonomous Vehicle System (AVS). Prior to getting behind the wheel, all AVSTSs undergo a rigorous training program which, among other things, teaches them about the underlying technolo\",\n    \"postFromDate\": \"2021-05-01\",\n    \"postToDate\": \"2022-05-01\",\n    \"salaryRangFrom\":50,\n    \"salaryRangTo\": 150\n}",
+							"raw": "{\n    \"title\":\"Java Software Engineer II\",\n    \"location\":\"Austin, TX\",\n    \"jobDescription\": \"operating our autonomous vehicles on public roads to enable Argo to continue its testing, monitoring, and development of its Autonomous Vehicle System (AVS). Prior to getting behind the wheel, all AVSTSs undergo a rigorous training program which, among other things, teaches them about the underlying technolo\",\n    \"postFromDate\": \"2022-06-01\",\n    \"postToDate\": \"2023-05-01\",\n    \"salaryRangFrom\":50,\n    \"salaryRangTo\": 150\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -330,7 +330,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"title\":\"Graduate Software Engineer\",\n    \"location\":\"Austin, TX\",\n    \"jobDescription\": \"Improving the markets requires proprietary trading systems nimble enough to operate at peak efficiency in even the most extreme market conditions. Optiver's engineers build those systems. It starts with a rigorous training program, during which you'll learn the ins and outs of our trading systems and the engineering principles that underpin our decision-making. Some of the challenges you'll face daily include, automatically pricing diverse sets of financial instruments and guaranteeing our systems are safe and controlled in an environment with no room for error. Of course, rapidly changing market events ensure a steady flow of new and complex challenges that will require you to constantly sharpen your skills.\",\n    \"postFromDate\": \"2021-05-01\",\n    \"postToDate\": \"2022-05-01\",\n    \"salaryRangFrom\":50,\n    \"salaryRangTo\": 100\n}",
+							"raw": "{\n    \"title\":\"Graduate Software Engineer\",\n    \"location\":\"Austin, TX\",\n    \"jobDescription\": \"Improving the markets requires proprietary trading systems nimble enough to operate at peak efficiency in even the most extreme market conditions. Optiver's engineers build those systems. It starts with a rigorous training program, during which you'll learn the ins and outs of our trading systems and the engineering principles that underpin our decision-making. Some of the challenges you'll face daily include, automatically pricing diverse sets of financial instruments and guaranteeing our systems are safe and controlled in an environment with no room for error. Of course, rapidly changing market events ensure a steady flow of new and complex challenges that will require you to constantly sharpen your skills.\",\n    \"postFromDate\": \"2022-06-01\",\n    \"postToDate\": \"2023-05-01\",\n    \"salaryRangFrom\":50,\n    \"salaryRangTo\": 100\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -462,7 +462,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"street\":\"street\",\n    \"city\":\"city\",\n    \"state\":\"state\",\n    \"zipcode\":\"123123\"\n}",
+							"raw": "{\n    \"street\":\"broadway\",\n    \"city\":\"fairfield\",\n    \"state\":\"IA\",\n    \"zipcode\":\"52557\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -507,7 +507,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"userId\":2,\n    \"street\":\"street\",\n    \"city\":\"city\",\n    \"state\":\"state\",\n    \"zipcode\":\"123123\"\n}",
+							"raw": "{\n    \"userId\":2,\n    \"street\":\"broadway\",\n    \"city\":\"Fairfield\",\n    \"state\":\"IA\",\n    \"zipcode\":\"52557\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -639,7 +639,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"usernameOrEmail\":\"user.khudairat+2@gmail.com\",\n    \"password\":\"user\"\n}",
+							"raw": "{\n    \"usernameOrEmail\":\"user.testgmail.com\",\n    \"password\":\"user\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -655,76 +655,6 @@
 								"api",
 								"auth",
 								"verify-token"
-							]
-						}
-					},
-					"response": []
-				}
-			]
-		},
-		{
-			"name": "User",
-			"item": [
-				{
-					"name": "users - me",
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": [
-								{
-									"key": "token",
-									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjIxMjI2OTQ0LCJleHAiOjE2MjE4MzE3NDR9.wPvSd4-NReg9Ljq6AnFpjqrxVL_xz41T6c1eBsagKS0lBM69a8gxvihIT3l8_xKQkzbTLJ7ac_nlZcUbiQcB7w",
-									"type": "string"
-								}
-							]
-						},
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "localhost/user/me",
-							"host": [
-								"localhost"
-							],
-							"path": [
-								"user",
-								"me"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Create Admin",
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": [
-								{
-									"key": "token",
-									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI1IiwiaWF0IjoxNjIxMTgzMTAyLCJleHAiOjE2MjE3ODc5MDJ9.Xt0f5WdEcJzr9jk77E48SJrtgkcQO1o_BP7_DsrXbd1gZwg90Sj6Vx5u1vdPcZb_8fbsyEjduiw1EV9P16nxnQ",
-									"type": "string"
-								}
-							]
-						},
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"name\":\"user\",\n    \"username\":\"greegnexdsr\",\n    \"email\":\"user@adsd.asgsdds\",\n    \"password\":\"user\"\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "localhost/user/create-admin",
-							"host": [
-								"localhost"
-							],
-							"path": [
-								"user",
-								"create-admin"
 							]
 						}
 					},
@@ -793,16 +723,13 @@
 							"formdata": []
 						},
 						"url": {
-							"raw": "127.0.0.1:8080/api/skills/:id",
+							"raw": "{{api_url}}/api/ca/skills/:id",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{api_url}}"
 							],
-							"port": "8080",
 							"path": [
 								"api",
+								"ca",
 								"skills",
 								":id"
 							],
@@ -844,12 +771,13 @@
 							}
 						},
 						"url": {
-							"raw": "localhost/api/skills/:id",
+							"raw": "{{api_url}}/api/ca/skills/:id",
 							"host": [
-								"localhost"
+								"{{api_url}}"
 							],
 							"path": [
 								"api",
+								"ca",
 								"skills",
 								":id"
 							],
@@ -935,12 +863,13 @@
 							}
 						},
 						"url": {
-							"raw": "localhost/api/work-experince/:id",
+							"raw": "{{api_url}}/api/ca/work-experince/:id",
 							"host": [
-								"localhost"
+								"{{api_url}}"
 							],
 							"path": [
 								"api",
+								"ca",
 								"work-experince",
 								":id"
 							],
@@ -971,7 +900,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"companyName\":\"coding\",\n    \"fromDate\": \"2020-01-10\",\n    \"toDate\": \"2022-03-02\",\n    \"lastSalary\": 200,\n    \"position\":\"position\"\n}",
+							"raw": "{\n    \"companyName\":\"MIU\",\n    \"fromDate\": \"2021-04-14\",\n    \"toDate\": \"2022-03-02\",\n    \"lastSalary\": 2000,\n    \"position\":\"Intermediate\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -979,16 +908,13 @@
 							}
 						},
 						"url": {
-							"raw": "127.0.0.1:8080/api/work-experince/",
+							"raw": "{{api_url}}/api/ca/work-experince/",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{api_url}}"
 							],
-							"port": "8080",
 							"path": [
 								"api",
+								"ca",
 								"work-experince",
 								""
 							]
@@ -1024,16 +950,13 @@
 							}
 						},
 						"url": {
-							"raw": "127.0.0.1:8080/api/work-experince/:id",
+							"raw": "{{api_url}}/api/ca/work-experince/:id",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{api_url}}"
 							],
-							"port": "8080",
 							"path": [
 								"api",
+								"ca",
 								"work-experince",
 								":id"
 							],
@@ -1077,12 +1000,13 @@
 							}
 						},
 						"url": {
-							"raw": "localhost/api/educations/:id",
+							"raw": "{{api_url}}/api/ca/educations/:id",
 							"host": [
-								"localhost"
+								"{{api_url}}"
 							],
 							"path": [
 								"api",
+								"ca",
 								"educations",
 								":id"
 							],
@@ -1121,16 +1045,13 @@
 							}
 						},
 						"url": {
-							"raw": "127.0.0.1:8080/api/educations/",
+							"raw": "{{api_url}}/api/ca/educations/",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{api_url}}"
 							],
-							"port": "8080",
 							"path": [
 								"api",
+								"ca",
 								"educations",
 								""
 							]
@@ -1166,16 +1087,13 @@
 							}
 						},
 						"url": {
-							"raw": "127.0.0.1:8080/api/educations/:id",
+							"raw": "{{api_url}}/api/ca/educations/:id",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{api_url}}"
 							],
-							"port": "8080",
 							"path": [
 								"api",
+								"ca",
 								"educations",
 								":id"
 							],
@@ -1219,12 +1137,13 @@
 							}
 						},
 						"url": {
-							"raw": "localhost/api/certificates/:id",
+							"raw": "{{api_url}}/api/ca/certificates/:id",
 							"host": [
-								"localhost"
+								"{{api_url}}"
 							],
 							"path": [
 								"api",
+								"ca",
 								"certificates",
 								":id"
 							],
@@ -1255,7 +1174,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"name\": \"First Certificate\",\n    \"issuedBy\": \"Nejed\",\n    \"issueDate\": \"2020-02-01\",\n    \"expirationDate\": \"2022-02-01\"\n}\n\n\n\n",
+							"raw": "{\n    \"name\": \"VAJA Certificate\",\n    \"issuedBy\": \"tEST\",\n    \"issueDate\": \"2022-02-01\",\n    \"expirationDate\": \"2023-02-01\"\n}\n\n\n\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1263,16 +1182,13 @@
 							}
 						},
 						"url": {
-							"raw": "127.0.0.1:8080/api/certificates/",
+							"raw": "{{api_url}}/api/ca/certificates/",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{api_url}}"
 							],
-							"port": "8080",
 							"path": [
 								"api",
+								"ca",
 								"certificates",
 								""
 							]
@@ -1296,16 +1212,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "127.0.0.1:8080/api/certificates/:id",
+							"raw": "{{api_url}}/api/ca/certificates/:id",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{api_url}}"
 							],
-							"port": "8080",
 							"path": [
 								"api",
+								"ca",
 								"certificates",
 								":id"
 							],
@@ -1340,16 +1253,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "127.0.0.1:8080/api/job-seeker/:id",
+							"raw": "{{api_url}}/api/ca/job-seeker/:id",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{api_url}}"
 							],
-							"port": "8080",
 							"path": [
 								"api",
+								"ca",
 								"job-seeker",
 								":id"
 							],
@@ -1388,16 +1298,13 @@
 							}
 						},
 						"url": {
-							"raw": "127.0.0.1:8080/api/job-seeker/:id",
+							"raw": "{{api_url}}/api/ca/job-seeker/:id",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{api_url}}"
 							],
-							"port": "8080",
 							"path": [
 								"api",
+								"ca",
 								"job-seeker",
 								":id"
 							],
@@ -1428,7 +1335,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"bio\":\"bio2\",\n    \"currentPosition\":\"this is pdosition\"\n}",
+							"raw": "{\n    \"bio\":\"BOI\",\n    \"currentPosition\":\"intermediate\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1466,7 +1373,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"bio\":\"bio2\",\n    \"current_position\":\"this is pdosition\"\n}",
+							"raw": "{\n    \"bio\":\"BOI\",\n    \"current_position\":\"Intermediate\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1504,7 +1411,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{api_url}}/api/job/search?job=saasasasas",
+							"raw": "{{api_url}}/api/job/search?job=java",
 							"host": [
 								"{{api_url}}"
 							],
@@ -1516,7 +1423,7 @@
 							"query": [
 								{
 									"key": "job",
-									"value": "saasasasas"
+									"value": "java"
 								}
 							]
 						}
